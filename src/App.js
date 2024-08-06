@@ -19,7 +19,6 @@ export default function App() {
 
     <div className="App" >
       <Header />
-      <button onClick={onToggleButton}>toggle</button>
       <Routes>
         <Route index element={<ProductList />} />
         <Route path={'form'} element={<Form />} />

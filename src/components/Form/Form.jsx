@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Form.css'
-import { useTelegram } from '../hooks/useTelegram'
+import { useTelegram } from '../../hooks/useTelegram'
 
 export default function Form() {
 
@@ -16,7 +16,7 @@ tg.MainButton.setParams({
     }, [])
 
     useEffect(() => {
-if(!country, !street) {
+if(!country || !street) {
     tg.MainButton.hide()
 } else{
     th.MainButton.show()
