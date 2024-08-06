@@ -40,7 +40,7 @@ setCountry(e.target.value)
             <h3>Input your data</h3>
             <input className={'input'} type="text" placeholder={'country'} value={country} onChange={onChangeCountry}/>
             <input className={'input'} type="text" placeholder={'street'} value={street} onChange={onChangeStreet}/>
-            <select name="select" value={subject} onChange={onChangeSubject}>
+            <select className="select" value={subject} onChange={onChangeSubject}>
             <option value={'physical'}>ph. person</option>
                 <option value={'legal'}>legal person</option>
             </select>
