@@ -5,7 +5,7 @@ import { useTelegram } from './components/hooks/useTelegram'
 import {Route, Routes} from 'react-router-dom'
 import ProductList from './components/ProductList/ProductList';
 import Form from './components/Form/Form';
-import Button from './components/Button/Button';
+
 
 export default function App() {
 
@@ -19,7 +19,7 @@ export default function App() {
 
     <div className="App" >
       <Header />
-      
+      <button onClick={onToggleButton}>toggle</button>
       <Routes>
         <Route index element={<ProductList />}/>
         <Route path={'form'} element={<Form/>}/>
