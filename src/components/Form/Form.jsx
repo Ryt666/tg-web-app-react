@@ -29,7 +29,7 @@ tg.sendData(JSON.stringify(data))
         tg.MainButton.setParams({
             text: 'send data'
         })
-    }, [])
+    }, [onSendData])
 
     useEffect(() => {
         if(!street || !country) {
