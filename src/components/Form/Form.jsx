@@ -17,12 +17,12 @@ const data = {
     subject
 }
 tg.sendData(JSON.stringify(data))
-    }, [])
+    }, [country, street,subject])
 
     useEffect(()=>{
-        tg.WebApp.onEvent('mainButtonClicked', onSendData)
+        tg.onEvent('mainButtonClicked', onSendData)
         return () => {
-            tg.WebApp.onEvent('mainButtonClicked', onSendData)
+            tg.offEvent('mainButtonClicked', onSendData)
         }
     })
     useEffect(() => {
