@@ -13,6 +13,7 @@ const {user, onClose} = useTelegram()
     <span className={'username'}>
         {user?.username}
     </span>
+  
 
 </div>
     )
