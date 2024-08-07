@@ -24,7 +24,6 @@ export default function App() {
         <Route index element={<ProductList />} />
         <Route path={'form'} element={<Form />} />
       </Routes>
-     <Button onClick={onToggleButton}>toggle</Button>
     </div>
   );
 }
